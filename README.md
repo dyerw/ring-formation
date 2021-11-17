@@ -1,4 +1,8 @@
-# New Project
+# RingSim
+
+Can we simulate ring formation from n-body gravity on many particles using a GPU? Let's find out.
+
+So far just playing around with THREE/React and using GLSL shaders.
 
 > ✨ Bootstrapped with Create Snowpack App (CSA).
 

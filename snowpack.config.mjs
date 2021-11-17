@@ -1,10 +1,13 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
+import glslify from 'snowpack-plugin-glslify';
 export default {
   mount: {
     public: { url: '/', static: true },
     src: { url: '/dist' },
   },
   plugins: [
+    '@snowpack/plugin-postcss',
+    'snowpack-plugin-glslify',
     '@snowpack/plugin-react-refresh',
     '@snowpack/plugin-dotenv',
     [
@@ -27,7 +30,7 @@ export default {
     /* ... */
   },
   devOptions: {
-    /* ... */
+    tailwindConfig: './tailwind.config.js',
   },
   buildOptions: {
     /* ... */
